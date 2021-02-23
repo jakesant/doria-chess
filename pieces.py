@@ -17,6 +17,8 @@ class Pawn:
         
 
 class Rook:
+    """Moves any space directly horizontally or vertically"""
+
     def __init__(self):
         self.hor_range = 8
         self.vert_range = 8
@@ -27,6 +29,8 @@ class Knight:
     def __init__(self):
 
 class Bishop:
+    """Moves diagonally"""
+
     def __init__(self):
         
 class Queen:
