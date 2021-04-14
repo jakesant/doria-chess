@@ -3,10 +3,10 @@ class Piece:
     
     inheriting this"""
 
-    def __init__(self):
+    def __init__(self, can_move_back=True, movement_range):
         self.first_move = True
-        self.can_move_back = False
-        self.movement_range = [0][0]
+        self.can_move_back = can_move_back
+        self.movement_range = movement_range
 
 class Pawn(Piece):
     """On first move, a pawn can move 2 spaces forward.
@@ -31,7 +31,7 @@ class Rook(Piece):
     """Moves any space directly horizontally or vertically"""
 
     def __init__(self):
-        super().__init__()
+        super().__init__(can_move_back = False, movement_range = [][])
         self.hor_range = 8
         self.vert_range = 8
         
