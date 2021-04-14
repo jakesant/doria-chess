@@ -1,0 +1,8 @@
+Each piece will have a movement range
+
+Rook and King will need variable for castling
+
+Pawn:
+-Can't move backwrds
+-Moves single square forward
+-First time it moves, it can move two squares
